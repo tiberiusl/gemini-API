@@ -1,0 +1,84 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    background-color: #CED4DA;
+}
+
+h1 {
+    font-family: "Stack Sans Notch", sans-serif;
+    color: white;
+    background-color: #212529;
+    padding: 1rem;
+}
+
+#questionArea {
+    background-color: #343A40;
+    display: flex;
+    align-items: center;
+}
+
+#searchBar {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem 10rem;
+    border-radius: 9999px;
+    border-style: solid;
+    border-color: #6C757D;
+    background-color: #343A40;
+    width: 100%;
+}
+
+#userInput {
+    resize: none;
+    font-family: "Elms Sans", sans-serif;
+    margin-left: 0.75rem;
+    color: white;
+    background-color: #343A40;
+    border-style: none;
+    flex: 1;
+}
+#userInput::placeholder {
+    color: #CED4DA;
+    font-style: italic;
+}
+#userInput:focus {
+    outline: none;
+}
+
+#sendButton {
+    color: #DEE2E6;
+    background-color: #495057;
+    border-style: none;
+    font-size: large;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow 0.1s;
+}
+#sendButton:focus {
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #CED4DA;
+    font-weight: bold;
+}
+#sendButton:hover {
+    box-shadow: 0 0 5px #ADB5BD;
+    transition: 0.1s;
+}
+#sendButton:active {
+    background-color: #ADB5BD;
+}
+
+#responseArea {
+    background-color: #495057;
+}
+#response {
+    color: white;
+    padding: 1rem 10rem;
+    font-family: "Elms Sans", sans-serif;
+}
