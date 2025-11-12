@@ -1,6 +1,6 @@
 // For Node.js environments
 import 'dotenv/config'
-import { GoogleGenAI } from '@google/genai';
+import {GoogleGenAI} from '@google/genai';
 
 //API SECRET
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
@@ -15,8 +15,7 @@ export async function gemini_api_call(user_query) {
         contents: user_query,
     });
 
-    const responseJson = JSON.stringify(response, null, 2);
-    return responseJson
+    return response;
 }
 
 // main();
